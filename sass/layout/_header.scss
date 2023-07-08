@@ -1,0 +1,85 @@
+.header {
+    border-bottom: 1px solid var(--border-header-color);
+}
+
+.header__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--akcent-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: inherit;
+}
+
+.logo--akcent {
+    color: var(--akcent-color);
+}
+
+.nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav__item:not(:first-child) {
+    margin-left: 50px;
+}
+
+.contacts-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-list__item:not(:first-child) {
+    margin-left: 45px;
+}
+
+.nav__link,
+.contakt-list__link {
+    position: relative;
+    transition: fill 250ms var(--cubiq), color 250ms var(--cubiq);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: inline-flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contakt-list__link {
+    color: var(--secod-color);
+    display: flex;
+    align-items: center;
+}
+
+.contacts-list__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.nav__link:hover,
+.nav__link:focus,
+.contakt-list__link:hover,
+.contakt-list__link:focus,
+.addres-list .link:hover,
+.addres-list .link:focus,
+.nav__link--activ {
+    color: var(--akcent-color);
+    fill: var(--akcent-color);
+}
+
+.nav__link--activ::after {
+    position: absolute;
+    bottom: -1px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--akcent-color);
+}
