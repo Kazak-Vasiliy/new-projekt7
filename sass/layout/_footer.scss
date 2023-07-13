@@ -1,0 +1,79 @@
+.footer {
+    padding: 60px 0;
+    color: var(--white-color);
+    background-color: var(--footer-background);
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.addres-list {
+    margin-top: 20px;
+}
+
+.addres-list__link {
+    display: block;
+    transition: color 250ms var(--cubiq);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--secod-color);
+    line-height: 1.71;
+    font-style: normal;
+}
+
+.addres-list__item:nth-child(2) {
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.addres-list--akcent {
+    color: var(--white-color);
+}
+
+.toadd {
+    margin-left: 70px;
+}
+
+.toadd__list {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.toadd__link {
+    fill: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.folowme {
+    margin-left: 93px;
+}
+
+.folowme__title {
+    margin-bottom: 20px;
+    display: inline-flex;
+}
+
+.form {
+    display: flex;
+}
+
+.form__email {
+    width: 358px;
+    height: 50px;
+    border: none;
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    padding-left: 16px;
+    color: var(--white-color);
+}
+
+.form__send {
+    fill: var(--white-color);
+    margin-left: 10px;
+}
