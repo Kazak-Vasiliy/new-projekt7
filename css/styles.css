@@ -612,11 +612,11 @@ transition: transform 250ms var(--cubiq);
 } */
 
 /* ---------------------MODAL---------------------- */
-/* .backdrop.is-hidden{
+.backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
-} */
-/* .backdrop{
+} 
+.backdrop{
     position: fixed;
     opacity: 1;
     transition: opacity 250ms var(--cubiq);
@@ -628,8 +628,8 @@ transition: transform 250ms var(--cubiq);
 }
 .backdrop.is-hidden .modal{
     transform:translate(-50%, -50%) scale(0.7);
-} */
-/* .modal{
+} 
+ .modal{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -641,8 +641,8 @@ transition: transform 250ms var(--cubiq);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
-} */
-/* .modal__icon-close{
+} 
+ .modal__icon-close{
     transition: background-color 250ms var(--cubiq),fill 250ms var(--cubiq);
     position: absolute;
     right:8px;
@@ -663,8 +663,8 @@ transition: transform 250ms var(--cubiq);
 .modal__icon-close:focus{
     background-color: var(--akcent-color);
     fill:var(--white-color);
-} */
-/* .modal-form__title{
+} 
+ .modal-form__title{
     display: flex;
     justify-content: center;
     margin-bottom: 12px;
@@ -730,8 +730,8 @@ margin-bottom: 10px;
     justify-content: center;
     cursor: pointer;
     align-items: center;
-} */
-/* .modal-form__check{ */
+} 
+ .modal-form__check{ 
     /* position: absolute;
         width: 1px;
         height: 1px;
@@ -740,13 +740,13 @@ margin-bottom: 10px;
         padding: 0;
         clip: rect(0 0 0 0);
         overflow: hidden; */
-/* 
+
     -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
         position: absolute;
-} */
-/* .modal-form__icon-check{
+} 
+.modal-form__icon-check{
     width:16px ;
     height:15px ;
     border: 2px solid black;
@@ -783,4 +783,4 @@ margin-bottom: 10px;
     border-radius: 4px;
     border: none ;
     cursor: pointer;
-} */
+} 
