@@ -4,34 +4,23 @@
 }
 
 .card__item {
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &:nth-child(3n) {
+        margin-right: 0;
+        /*вариант 1*/
+    }
+    &:nth-child(-n+3) {
+        margin-top: 0;
+        /*вариант 1 */
+    }
     margin-right: 30px;
     /* width: calc((100%-60px)/3); */
     margin-top: 30px;
     transition: box-shadow 250ms var(--cubiq);
-
 }
-
-.card__item:hover,
-.card__item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.card__item:nth-child(3n) {
-    margin-right: 0;
-    /*вариант 1*/
-}
-
-.card__item:nth-child(-n+3) {
-    margin-top: 0;
-    /*вариант 1 */
-}
-
-.card__item:hover .card__label,
-.card__item:hover .owerlay {
-    transform: scaleX(1) translateY(0);
-    opacity: 1;
-}
-
 .card__thumb {
     position: relative;
     overflow: hidden;
@@ -42,6 +31,10 @@
 }
 
 .owerlay {
+    .card__item:hover & {
+        transform: scaleX(1) translateY(0);
+        opacity: 1;
+    }
     position: absolute;
     top: 0;
     left: 0;
@@ -54,6 +47,10 @@
 }
 
 .card__label {
+    .card__item:hover &{
+        transform: scaleX(1) translateY(0);
+        opacity: 1;
+    }
     position: absolute;
     top: 0;
     transform: scaleX(0);

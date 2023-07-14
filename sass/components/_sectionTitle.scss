@@ -1,9 +1,11 @@
-.section .title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-}
+.section{
+    .title {
+        margin-top: 0;
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+    }
+} 

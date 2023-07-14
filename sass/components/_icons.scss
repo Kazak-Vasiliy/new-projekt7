@@ -10,26 +10,14 @@
     margin-left: 10px;
 }
 
-.icons-list__link,
-.toadd__link {
-    transition: background-color 250ms var(--cubiq), color 250ms var(--cubiq);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 44px;
-    width: 44px;
-    color: var(--icons-color);
+.icons-list__link {
+    @extend %iconsLink;
+    &:hover,
+    &:focus{
+        background-color: var(--akcent-color);
+        color: var(--white-color);
+    }
 }
-
-.icons-list__link:hover,
-.icons-list__link:focus,
-.toadd__link:hover,
-.toadd__link:focus {
-    background-color: var(--akcent-color);
-    color: var(--white-color);
-}
-
 .icons-list__social {
     fill: currentColor;
 }

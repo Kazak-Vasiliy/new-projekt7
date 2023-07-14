@@ -19,16 +19,14 @@
     background-color: var(--white-color);
     /* flex-basis: calc((100%-90px)/4); вариант 1 */
     /* margin: 15px; вариант 3 */
-}
-
-.team__item:nth-child(4n) {
-    margin-right: 0;
-    /*вариант 1*/
-}
-
-.team__item:nth-child(-n+4) {
-    margin-top: 0;
-    /*вариант 1 */
+    &:nth-child(4n) {
+        margin-right: 0;
+        /*вариант 1*/
+    }
+    &:nth-child(-n+4) {
+        margin-top: 0;
+        /*вариант 1 */
+    }
 }
 
 /* ======================АЛЬТЕРНАТИВА================== */

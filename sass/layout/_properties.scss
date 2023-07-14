@@ -4,18 +4,18 @@
 }
 
 .properties__item {
-    width: 270px;
-}
+    &::before {
+        display: block;
+        content: '';
+        height: 120px;
+        background-color: var(--section-background);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
 
-.properties__item::before {
-    display: block;
-    content: '';
-    height: 120px;
-    background-color: var(--section-background);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-    border-radius: 4px;
+    width: 270px;
 }
 
 .antenna::before {

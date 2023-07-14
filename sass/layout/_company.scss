@@ -14,19 +14,16 @@
     width: 170px;
     height: 92px;
     color: var(--icons-color);
-
-}
-
-.company-list__item:hover .company-list__link {
-    /* transition: transform 2000ms var(--cubiq);
+    .company-list__item:hover & {
+        /* transition: transform 2000ms var(--cubiq);
             transform: rotateX(360deg); */
-    animation: rotation 1500ms ease-in-out;
-    /* transform: rotateY(360deg);
-    transition: transform 500ms linear; */
-    color: var(--akcent-color);
-    border-color: var(--akcent-color);
+        animation: rotation 1500ms ease-in-out;
+        /* transform: rotateY(360deg);
+        transition: transform 500ms linear; */
+        color: var(--akcent-color);
+        border-color: var(--akcent-color);
+    }
 }
-
 .company-list__icon {
     fill: currentColor;
 }

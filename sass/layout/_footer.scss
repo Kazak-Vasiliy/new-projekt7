@@ -10,10 +10,19 @@
 }
 
 .addres-list {
+    &__item:nth-child(2) {
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
     margin-top: 20px;
 }
 
 .addres-list__link {
+    &:hover,
+    &:focus{
+        color: var(--akcent-color);
+        fill: var(--akcent-color);
+    }
     display: block;
     transition: color 250ms var(--cubiq);
     font-size: 14px;
@@ -21,15 +30,9 @@
     color: var(--secod-color);
     line-height: 1.71;
     font-style: normal;
-}
-
-.addres-list__item:nth-child(2) {
-    margin-top: 9px;
-    margin-bottom: 9px;
-}
-
-.addres-list--akcent {
-    color: var(--white-color);
+    &--akcent {
+        color: currentColor;
+    }
 }
 
 .toadd {
@@ -42,6 +45,12 @@
 }
 
 .toadd__link {
+    @extend %iconsLink;
+    &:hover,
+    &:focus{
+        background-color: var(--akcent-color);
+        color: var(--white-color);
+    }
     fill: var(--white-color);
     background-color: rgba(255, 255, 255, 0.1);
 }

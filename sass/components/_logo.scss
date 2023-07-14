@@ -5,8 +5,8 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: inherit;
-}
 
-.logo--akcent {
-    color: var(--akcent-color);
+    &--akcent {
+        color: var(--akcent-color);
+    }
 }

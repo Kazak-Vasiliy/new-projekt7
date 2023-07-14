@@ -19,7 +19,7 @@ b {
 }
 .section {
     padding: 94px 0;
-}
-.section.padding {
-    padding-bottom: 0;
+    &.padding {
+        padding-bottom: 0;
+    }
 }
