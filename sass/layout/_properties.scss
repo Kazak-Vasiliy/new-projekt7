@@ -17,27 +17,37 @@
 
     width: 270px;
 }
-
-.antenna::before {
-    background-image: url(../svg/antenna.svg);
-}
-
-.clock::before {
-    background-image: url(../svg/clock.svg);
-}
-
-.diagram::before {
-    background-image: url(../svg/diagram.svg);
-}
-
-.astronaut::before {
-    background-image: url(../svg/astronaut.svg);
-}
 .properties__text {
+    @include font(400, 14px, 0.03em, 1.71);
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    line-height: 1.71;
     color: var(--secod-color);
 }
+
+// .antenna::before {
+//     background-image: url(../svg/antenna.svg);
+// }
+
+// .clock::before {
+//     background-image: url(../svg/clock.svg);
+// }
+
+// .diagram::before {
+//     background-image: url(../svg/diagram.svg);
+// }
+
+// .astronaut::before {
+//     background-image: url(../svg/astronaut.svg);
+// }
+
+$icons:'antenna','clock','diagram','astronaut';
+
+@mixin generateImg($iconList){
+    @each $iconName in $iconList {
+        .#{$iconName}::before {
+            background-image: url(/svg/#{$iconName}.svg);
+        }
+    }
+}
+@include generateImg($icons);
+

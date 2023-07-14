@@ -8,7 +8,6 @@
     text-align: center;
     font-family: inherit;
 }
-// lh, ls,fs,fw,col,bgc,cur,br,bor
 .form__btn {
     @extend %buttons;
     width: 200px;
@@ -28,14 +27,11 @@
     margin: 0 auto 50px;
 }
 .portfolio__button {
+    @include font(500, 16px, 0.03em, 1.62);
     display: inline-block;
     transition: background-color 250ms var(--cubiq), color 250ms var(--cubiq);
     padding: 6px 22px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
     cursor: pointer;
     font-family: inherit;
     border: 0 solid transparent;

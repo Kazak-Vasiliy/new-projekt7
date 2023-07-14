@@ -14,13 +14,10 @@
 }
 
 .hero__title {
+    @include font(900, 44px, 0.06em, 1.36);
     width: 696px;
     margin: 0 auto 30px;
     text-align: center;
-    font-weight: 900;
-    font-size: 44px;
-    letter-spacing: 0.06em;
-    line-height: 1.36;
     color: var(--white-color);
     text-transform: uppercase;
 }
